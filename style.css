@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(102, 211, 211);
+    font-family: arial;
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    text-align: Center
+}
+h2  {
+color: rgb(192, 189, 189)66)
+}
+#texto {
+    border: 2px solid;
+    width: 800px;
+    height: 200px;
+    background-color: white;
+    font-size: arial;
+    text-align: center;
+}
+#deslocamento {
+    background-color: white;
+    font-size: arial;
+    text-align: center;
+}
+footer {
+	color: rgb(243, 235, 235);
+	text-align: center;
+	margin: auto;
+}
