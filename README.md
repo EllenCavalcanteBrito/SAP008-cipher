@@ -36,6 +36,7 @@ A empresa (fictícia) Cifra/Decifra tem como objetivo:
 
 E utiliza como metodologia umas das formas mais antiga de codificação que é a Cifra de César (apresentada acima).
 Abaixo é ilustrado o protótipo de baixa fidelidade:
+<img src="https://github.com/EllenCavalcanteBrito/SAP008-cipher/blob/main/Prototipo%20baixa%20fidelidade%20(4).png">
 
 ## 3. Ferramentas utilizadas
 
