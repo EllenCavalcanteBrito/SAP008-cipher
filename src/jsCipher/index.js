@@ -1,17 +1,18 @@
 import cipher from './cipher.js';
 function clickCifrar() {
 var mensagem = document.getElementById("texto").value
-var deslocamento = document.getElementById("deslocamento").value;
-var cifra = cipher.cifragem;
+var numeroDeslocamento = document.getElementById("deslocamento").value;
+var cifra = cipher.cifragem(mensagem, numeroDeslocamento);
 document.getElementById("texto").value = cifra;
-if (mensagem === " "){
-    alert("Por favor, escreva um texto");
-            return false;
+if (mensagem === ""){
+    window.alert("Por favor, escreva um texto")
+} else {
+    window.alert("Seu texto será convertido")
 }
 }
-document.getElementById("cifrar").addEventListener("click", cifragem);
+document.getElementById("cifrar").addEventListener("click", clickCifrar);
 
-function clickDecifrar() {
+/* function clickDecifrar() {
     var cifragem = document.getElementById("texto").value
     var deslocamento = document.getElementById("deslocamento").value;
     var cifra = cipher.cifragem;
@@ -19,7 +20,7 @@ function clickDecifrar() {
     document.getElementById("texto").value = result;
     }
 
-/*function cifragem() {
+function cifragem() {
     var mensagem = document.getElementById("texto").value;
     if (!mensagem.match(/[a-zA-Z]/gi)) {
         window.alert("Caracteres e números não são aceitos")
