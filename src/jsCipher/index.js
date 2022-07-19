@@ -1,36 +1,47 @@
 import cipher from './cipher.js';
-function clickCifrar() {
-var mensagem = document.getElementById("texto").value
-var numeroDeslocamento = document.getElementById("deslocamento").value;
-var cifra = cipher.cifragem(mensagem, numeroDeslocamento);
-document.getElementById("texto").value = cifra;
+
+const textInput = document.getElementById("texto");
+
+textInput.addEventListener("keypress",function(e) {
+
+    if(!checkChar(e)){
+        e.preventDefault()
+    }
+});
+function checkChar(e) {
+    const char = String.fromCharCode(e.keyCode);
+    const pattern = "[a-zA-Z]";
+
+    if(char.match(pattern)){
+
+    return true;
+    }
+}
+function clickCifrar(e) {
+    var mensagem = document.getElementById("texto").value
+    mensagem = mensagem.toUpperCase()
+    var numeroDeslocamento = parseInt(document.getElementById("offset").value);
+    var cifra = cipher.encode(mensagem, numeroDeslocamento);
+    document.getElementById("texto").value = cifra;
 if (mensagem === ""){
     window.alert("Por favor, escreva um texto")
-} else {
+} 
+else {
     window.alert("Seu texto será convertido")
 }
 }
 document.getElementById("cifrar").addEventListener("click", clickCifrar);
 
-/* function clickDecifrar() {
-    var cifragem = document.getElementById("texto").value
-    var deslocamento = document.getElementById("deslocamento").value;
-    var cifra = cipher.cifragem;
-    console.log (result);
-    document.getElementById("texto").value = result;
-    }
-
-function cifragem() {
-    var mensagem = document.getElementById("texto").value;
-    if (!mensagem.match(/[a-zA-Z]/gi)) {
-        window.alert("Caracteres e números não são aceitos")
-    } else {
-        window.alert("Ok, sua mensagem será decifrada")
-    }
+function clickDecifrar() {
+    var mensagem = document.getElementById("texto").value
+    mensagem = mensagem.toUpperCase()
+    var numeroDeslocamento = document.getElementById("offset").valueAsNumber;
+    var cifra = cipher.decode(mensagem, numeroDeslocamento);
+    document.getElementById("texto").value = cifra;
+if (mensagem === ""){
+        window.alert("Por favor, escreva um texto")
+} else {
+        window.alert("Seu texto será convertido")
 }
-document.getElementById("cifrar").addEventListener("click", cifragem);*/
-
-
-
-
-console.log(cipher);
+}
+document.getElementById("decifrar").addEventListener("click", clickDecifrar);

@@ -6,21 +6,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
+    <header>
         <h1>Bem vindo à Cifra/Decifra</h1> 
-        <h2>Vamos te ajudar a criar uma senha mais segura 🐱‍👤 </h2>
-      Insira abaixo a frase que você quer cifrar, não se preocupe, também te ajudamos a decifrar.
-    </div>
+             <p><h2>Vamos te ajudar a deixar suas mensagens e senhas mais seguras 🐱‍👤 </p></h2>
+             <p>Insira abaixo o texto para cifrar, não se preocupe, também te ajudamos a decifrar.</p>
+      </header>
     <script src="./jsCipher/index.js" type="module"></script>
-    <input type="text" name="mensagem" id="texto" placeholder="Digite sua mensagem sem caracteres especiais" style="text-transform: uppercase">
+    <input type="text" name="mensagem" id="texto" placeholder="Digite sua mensagem/senha">
     <h3>Insira o número de deslocamento</h3>
-    <input type="number" name="numeroDeslocamento" id="deslocamento">
-    <div class="button">
-       <input class="button" type="submit" value="cifrar" id="cifrar">
-       <input class="button" type="submit" value="decifrar" id="decifrar">
-     </div>
-     <footer>
+    <input type="number" id="offset" placeholder="Preencha o nº">
+    <div class="container">
+    </br>
+       <input class="btn-1" type="submit" value="Cifrar" id="cifrar">
+       <input class="btn-2" type="submit" value="Decifrar" id="decifrar">
+   </div>
+  <footer>
       <p><p>&copy; Todos direitos reservados à Cifra/Decifra</p></p>
-    </footer>
-  </body>
+  </footer>
+</body>
 </html>

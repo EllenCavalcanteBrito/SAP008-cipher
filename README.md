@@ -34,9 +34,26 @@ A empresa (fictícia) Cifra/Decifra tem como objetivo:
 - Criar senhas seguras para email.
 - Mensagens secretas para alguma pessoa.
 
-E utiliza como metodologia umas das formas mais antiga de codificação que é a Cifra de César (apresentada acima).
+Nós utilizamos como metodologia umas das formas mais antigas de codificação que é a Cifra de César (apresentada no prefácio).
 Abaixo é ilustrado o protótipo de baixa fidelidade:
 <img src="https://github.com/EllenCavalcanteBrito/SAP008-cipher/blob/main/Prototipo%20baixa%20fidelidade%20(4).png">
+
+## 2.1 Interface do usuário
+
+A aplicação foi pensada para todos aqueles que desejam ter sua mensagem e/ou senha mais segura.
+A interface permite ao usuário escrever seu texto, escolher a chave do deslocamento offset e selecionar se o texto deve ser cifrado ou decifrado, conforme imagem abaixo:
+<img src="https://github.com/EllenCavalcanteBrito/SAP008-cipher/blob/main/Prototipo%20fiel.jpg">
+E com isso ajudar o usuário a ter mais segurança em suas mensagens e/ou senha.
+
+## 2.2 Arquivos
+
+Para conhecimento técnico do projeto, na pasta src contém todos os arquivos utilizados para implementação do mesmo, sendo:
+index.html = Onde contém a estrutura da página web
+style.css = Folha de estilização
+cipher.js = Lógica da function para codificar e decodificar a cifra de césar
+index.js = Lógica da function para receber informações dos usuários e criptografar
+
+Para visualizar a aplicação, acesse: https://ellencavalcantebrito.github.io/SAP008-cipher/
 
 ## 3. Ferramentas utilizadas
 
