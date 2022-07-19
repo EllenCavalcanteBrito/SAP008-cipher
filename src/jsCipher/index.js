@@ -18,10 +18,10 @@ function checkChar(e) {
     }
 }
 function clickCifrar(e) {
-    var mensagem = document.getElementById("texto").value
+    let mensagem = document.getElementById("texto").value
     mensagem = mensagem.toUpperCase()
-    var numeroDeslocamento = parseInt(document.getElementById("offset").value);
-    var cifra = cipher.encode(mensagem, numeroDeslocamento);
+    let numeroDeslocamento = parseInt(document.getElementById("offset").value);
+    let cifra = cipher.encode(mensagem, numeroDeslocamento);
     document.getElementById("texto").value = cifra;
 if (mensagem === ""){
     window.alert("Por favor, escreva um texto")
@@ -33,10 +33,10 @@ else {
 document.getElementById("cifrar").addEventListener("click", clickCifrar);
 
 function clickDecifrar() {
-    var mensagem = document.getElementById("texto").value
+    let mensagem = document.getElementById("texto").value
     mensagem = mensagem.toUpperCase()
-    var numeroDeslocamento = document.getElementById("offset").valueAsNumber;
-    var cifra = cipher.decode(mensagem, numeroDeslocamento);
+    let numeroDeslocamento = document.getElementById("offset").valueAsNumber;
+    let cifra = cipher.decode(mensagem, numeroDeslocamento);
     document.getElementById("texto").value = cifra;
 if (mensagem === ""){
         window.alert("Por favor, escreva um texto")
