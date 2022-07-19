@@ -1,26 +1,20 @@
 const cipher = {encode,decode}
 
 function encode(mensagem,numeroDeslocamento) {
-  var converterTexto = ""
+  let converterTexto = ""
   for (var index = 0; index < mensagem.length; index++) {
-    console.log(mensagem,numeroDeslocamento);
-  var cifrar = ((mensagem.charCodeAt(index) + 65 + numeroDeslocamento) % 26)  + 65;
-  console.log(cifrar)
+  let cifrar = ((mensagem.charCodeAt(index) + 65 + numeroDeslocamento) % 26)  + 65;
   converterTexto += String.fromCharCode(cifrar)
 }
-console.log(converterTexto)
 return converterTexto;
 }
 
 function decode(mensagem,numeroDeslocamento) {
-  var converterTexto = ""
+  let converterTexto = ""
   for (var index = 0; index < mensagem.length; index++) {
-    console.log(mensagem,numeroDeslocamento);
-  var cifrar = ((mensagem.charCodeAt(index) + 65 - numeroDeslocamento) % 26)  + 65;
-  console.log(cifrar)
+  let cifrar = ((mensagem.charCodeAt(index) + 65 - numeroDeslocamento) % 26)  + 65;
   converterTexto += String.fromCharCode(cifrar)
 }
-console.log(converterTexto)
 return converterTexto;
 }
 
