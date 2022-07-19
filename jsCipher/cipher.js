@@ -1,9 +1,10 @@
-const cipher = {cifragem}
-function cifragem(texto,deslocamento) {
+const cipher = {encode,decode}
+
+function encode(mensagem,numeroDeslocamento) {
   var converterTexto = ""
-  for (var index = 0; index < texto.length; index++) {
-    console.log(texto,deslocamento);
-  var cifrar = ((texto.charCodeAt(index) - 65 + deslocamento) % 26) + 65;
+  for (var index = 0; index < mensagem.length; index++) {
+    console.log(mensagem,numeroDeslocamento);
+  var cifrar = ((mensagem.charCodeAt(index) + 65 + numeroDeslocamento) % 26)  + 65;
   console.log(cifrar)
   converterTexto += String.fromCharCode(cifrar)
 }
@@ -11,15 +12,16 @@ console.log(converterTexto)
 return converterTexto;
 }
 
-/* function decifragem() {
+function decode(mensagem,numeroDeslocamento) {
+  var converterTexto = ""
   for (var index = 0; index < mensagem.length; index++) {
-  var mensagem = document.getElementById("texto").value;
-  var converterMensagem = String.fromCharCodeAt(mensagem)
-  var deslocamento = document.getElementById("deslocamento").value;
-  var decifrar = ((converterMensagem - 65 - deslocamento) % 26) + 65
-  console.log(decifrar)
+    console.log(mensagem,numeroDeslocamento);
+  var cifrar = ((mensagem.charCodeAt(index) + 65 - numeroDeslocamento) % 26)  + 65;
+  console.log(cifrar)
+  converterTexto += String.fromCharCode(cifrar)
 }
-return decifrar
-}*/
+console.log(converterTexto)
+return converterTexto;
+}
 
 export default cipher;

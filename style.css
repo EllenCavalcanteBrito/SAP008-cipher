@@ -1,14 +1,12 @@
 body {
-    background-color: rgb(102, 211, 211);
+    background: linear-gradient(to right, #b1c7e7 0%, #0099ff 100%);
     font-family: arial;
     margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    text-align: Center
+    text-align: Center;
 }
-h2  {
-color: rgb(192, 189, 189)66)
-}
+
 #texto {
     border: 2px solid;
     width: 800px;
@@ -17,11 +15,36 @@ color: rgb(192, 189, 189)66)
     font-size: arial;
     text-align: center;
 }
-#deslocamento {
+
+#offset {
     background-color: white;
     font-size: arial;
     text-align: center;
+    padding-bottom: 20px 0;
 }
+
+.btn-1{
+    border: 1px solid;
+    background-color: rgb(225, 224, 233);
+    color: black;
+}
+
+.btn-1:hover{
+    background-color: rgb(225, 224, 233);
+    color: blue;
+}
+
+.btn-2{
+    border: 1px solid;
+    background-color: rgb(225, 224, 233);
+    color: black;
+}
+
+.btn-2:hover{
+    background-color: rgb(225, 224, 233);
+    color: blue;
+}
+
 footer {
 	color: rgb(243, 235, 235);
 	text-align: center;
