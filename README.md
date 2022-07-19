@@ -53,7 +53,7 @@ style.css = Folha de estilização
 cipher.js = Lógica da function para codificar e decodificar a cifra de césar
 index.js = Lógica da function para receber informações dos usuários e criptografar
 
-Para visualizar a aplicação, acesse: https://ellencavalcantebrito.github.io/SAP008-cipher/
+Para visualizar a aplicação [clique aqui](https://ellencavalcantebrito.github.io/SAP008-cipher/)
 
 ## 3. Ferramentas utilizadas
 
