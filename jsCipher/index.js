@@ -39,12 +39,16 @@ function clickDecifrar() {
     let mensagem = document.getElementById("texto").value
     mensagem = mensagem.toUpperCase()
     let numeroDeslocamento = document.getElementById("offset").value;
-    let cifra = cipher.decode(mensagem, numeroDeslocamento);
-    document.getElementById("texto").value = cifra;
-if (mensagem === ""){
+    if (!numeroDeslocamento) {
+        window.alert("Preencha o deslocamento")
+    }
+   else if (!mensagem) {
         window.alert("Por favor, escreva um texto")
-} else {
+    }
+    else {
         window.alert("Seu texto será convertido")
-}
+        let cifra = cipher.encode(mensagem, numeroDeslocamento);
+        document.getElementById("texto").value = cifra;
+    }
 }
 document.getElementById("decifrar").addEventListener("click", clickDecifrar);
