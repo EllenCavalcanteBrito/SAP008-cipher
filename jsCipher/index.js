@@ -21,11 +21,11 @@ function clickCifrar(e) {
     let mensagem = document.getElementById("texto").value
     mensagem = mensagem.toUpperCase()
     let numeroDeslocamento = document.getElementById("offset").value;
-    if (!numeroDeslocamento) {
-        window.alert("Preencha o deslocamento")
-    }
-   else if (!mensagem) {
+    if (!mensagem) {
         window.alert("Por favor, escreva um texto")
+    }
+   else if (!numeroDeslocamento) {
+        window.alert("Preencha o deslocamento")
     }
     else {
         window.alert("Seu texto será convertido")
@@ -39,11 +39,11 @@ function clickDecifrar() {
     let mensagem = document.getElementById("texto").value
     mensagem = mensagem.toUpperCase()
     let numeroDeslocamento = document.getElementById("offset").value;
-    if (!numeroDeslocamento) {
-        window.alert("Preencha o deslocamento")
-    }
-   else if (!mensagem) {
+    if (!mensagem) {
         window.alert("Por favor, escreva um texto")
+    }
+   else if (!numeroDeslocamento) {
+        window.alert("Preencha o deslocamento")
     }
     else {
         window.alert("Seu texto será convertido")
