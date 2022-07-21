@@ -20,22 +20,25 @@ function checkChar(e) {
 function clickCifrar(e) {
     let mensagem = document.getElementById("texto").value
     mensagem = mensagem.toUpperCase()
-    let numeroDeslocamento = parseInt(document.getElementById("offset").value);
-    let cifra = cipher.encode(mensagem, numeroDeslocamento);
-    document.getElementById("texto").value = cifra;
-if (mensagem === ""){
-    window.alert("Por favor, escreva um texto")
-} 
-else {
-    window.alert("Seu texto será convertido")
-}
+    let numeroDeslocamento = document.getElementById("offset").value;
+    if (!numeroDeslocamento) {
+        window.alert("Preencha o deslocamento")
+    }
+   else if (!mensagem) {
+        window.alert("Por favor, escreva um texto")
+    }
+    else {
+        window.alert("Seu texto será convertido")
+        let cifra = cipher.encode(mensagem, numeroDeslocamento);
+        document.getElementById("texto").value = cifra;
+    }
 }
 document.getElementById("cifrar").addEventListener("click", clickCifrar);
 
 function clickDecifrar() {
     let mensagem = document.getElementById("texto").value
     mensagem = mensagem.toUpperCase()
-    let numeroDeslocamento = document.getElementById("offset").valueAsNumber;
+    let numeroDeslocamento = document.getElementById("offset").value;
     let cifra = cipher.decode(mensagem, numeroDeslocamento);
     document.getElementById("texto").value = cifra;
 if (mensagem === ""){
