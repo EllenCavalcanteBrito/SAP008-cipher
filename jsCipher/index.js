@@ -17,7 +17,7 @@ function checkChar(e) {
     return true;
     }
 }
-function clickCifrar(e) {
+function clickCifrar() {
     let mensagem = document.getElementById("texto").value
     mensagem = mensagem.toUpperCase()
     let numeroDeslocamento = document.getElementById("offset").value;
@@ -47,7 +47,7 @@ function clickDecifrar() {
     }
     else {
         window.alert("Seu texto será convertido")
-        let cifra = cipher.encode(mensagem, numeroDeslocamento);
+        let cifra = cipher.decode(mensagem, numeroDeslocamento);
         document.getElementById("texto").value = cifra;
     }
 }
