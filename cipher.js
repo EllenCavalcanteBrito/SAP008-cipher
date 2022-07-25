@@ -1,6 +1,9 @@
 const cipher = {encode,decode}
 
 function encode(mensagem,numeroDeslocamento) {
+  if (!numeroDeslocamento && !mensagem) {
+    throw new TypeError("Invalid parameters");
+  }
   let converterTexto = ""
   for (let index = 0; index < mensagem.length; index++) {
   let cifrar = ((mensagem.charCodeAt(index) - 65 + numeroDeslocamento) % 26)  + 65;
@@ -10,6 +13,9 @@ return converterTexto;
 }
 
 function decode(mensagem,numeroDeslocamento) {
+   if (!numeroDeslocamento && !mensagem ) {
+    throw new TypeError("Invalid parameters");
+  }
   let converterTexto = ""
   for (let index = 0; index < mensagem.length; index++) {
   let cifrar = ((mensagem.charCodeAt(index) - 65 - numeroDeslocamento) % 26)  + 65;
