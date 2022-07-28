@@ -48,10 +48,11 @@ E com isso ajudar o usuário a ter mais segurança em suas mensagens e/ou senha.
 ## 2.2 Arquivos
 
 Para conhecimento técnico do projeto, na pasta src contém todos os arquivos utilizados para implementação do mesmo, sendo:
-- index.html = Onde contém a estrutura da página web
+
+- index.html = Estrutura da página web
 - style.css = Folha de estilização
-- cipher.js = Lógica da function para codificar e decodificar a cifra de césar
-index.js = Lógica da function para receber informações dos usuários e criptografar
+- cipher.js = Lógica aplicação / codificar e decodificar a cifra de césar
+- index.js = Lógica para tratar dados recebidos pelos usuários
 
 Para visualizar a aplicação [clique aqui](https://ellencavalcantebrito.github.io/SAP008-cipher/)
 
