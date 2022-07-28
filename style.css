@@ -11,38 +11,42 @@ body {
     border: 2px solid;
     width: 800px;
     height: 200px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     font-size: arial;
     text-align: center;
 }
 
 #offset {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     font-size: arial;
     text-align: center;
     padding-bottom: 20px 0;
 }
 
-.btn-1{
+#buttom {
+    margin-top: 20px
+}
+
+#cifrar {
     border: 1px solid;
     background-color: rgb(225, 224, 233);
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
-.btn-1:hover{
+#cifrar:hover {
     background-color: rgb(225, 224, 233);
-    color: blue;
+    color: rgb(89, 0, 255);
 }
 
-.btn-2{
+#decifrar {
     border: 1px solid;
     background-color: rgb(225, 224, 233);
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
-.btn-2:hover{
+#decifrar:hover {
     background-color: rgb(225, 224, 233);
-    color: blue;
+    color: rgb(89, 0, 255);
 }
 
 footer {
