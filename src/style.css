@@ -7,7 +7,7 @@ body {
     text-align: Center;
 }
 
-#texto {
+.texto {
     border: 2px solid;
     width: 800px;
     height: 200px;
@@ -16,7 +16,7 @@ body {
     text-align: center;
 }
 
-#offset {
+.offset {
     background-color: rgb(255, 255, 255);
     font-size: arial;
     text-align: center;
@@ -27,24 +27,24 @@ body {
     margin-top: 20px
 }
 
-#cifrar {
+.cifrar {
     border: 1px solid;
     background-color: rgb(225, 224, 233);
     color: rgb(0, 0, 0);
 }
 
-#cifrar:hover {
+.cifrar:hover {
     background-color: rgb(225, 224, 233);
     color: rgb(89, 0, 255);
 }
 
-#decifrar {
+.decifrar {
     border: 1px solid;
     background-color: rgb(225, 224, 233);
     color: rgb(0, 0, 0);
 }
 
-#decifrar:hover {
+.decifrar:hover {
     background-color: rgb(225, 224, 233);
     color: rgb(89, 0, 255);
 }

@@ -7,20 +7,20 @@
   </head>
   <body>
     <header>
-        <h1>Bem vindo à Cifra/Decifra</h1> 
-             <p><h2>Vamos te ajudar a deixar suas mensagens e senhas mais seguras 🐱‍👤</h2></p>
-             <p>Insira abaixo o texto para cifrar, não se preocupe, também te ajudamos a decifrar.</p>
-      </header>
-  <script src="./index.js" type="module"></script>
-    <input type="text" name="mensagem" id="texto" placeholder="Digite sua mensagem">
-    <p><h3> Insira o número de deslocamento </h3></p>
-    <input type="number" id="offset" placeholder="Preencha o nº">
+      <h1>Bem vindo à Cifra/Decifra</h1> 
+      <h2>Vamos te ajudar a deixar suas mensagens e senhas mais seguras 🐱‍👤</h2>
+      <p>Insira abaixo o texto para cifrar, não se preocupe, também te ajudamos a decifrar.</p>
+    </header>
+    <input type="text" name="mensagem" class ="texto" id="texto" placeholder="Digite sua mensagem">
+    <h3> Insira o número de deslocamento </h3>
+    <input type="number" class="offset" id="offset" placeholder="Preencha o nº">
     <div id="buttom">
-      <input type="button" value="Cifrar" id="cifrar">
-      <input type="button" value="Decifrar" id="decifrar">
+      <input type="button" value="Cifrar" class="cifrar" id="cifrar">
+      <input type="button" value="Decifrar" class="decifrar" id="decifrar">
     </div>
-  <footer>
+    <footer>
       <p>&copy; Todos direitos reservados à Cifra/Decifra</p>
-  </footer>
-</body>
+    </footer>
+    <script src="./index.js" type="module"></script>
+  </body>
 </html>

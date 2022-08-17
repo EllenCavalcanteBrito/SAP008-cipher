@@ -21,7 +21,7 @@ function decode(numeroDeslocamento,mensagem) {
 
   let converterTexto = ""
   for (let index = 0; index < mensagem.length; index++) {
-    let cifrar = ((mensagem.charCodeAt(index) - 65 - numeroDeslocamento) % 26)  + 65;
+    let cifrar = ((mensagem.charCodeAt(index) - 90 - numeroDeslocamento) % 26)  + 90;
     converterTexto += String.fromCharCode(cifrar)
   }
   
