@@ -42,7 +42,7 @@ Abaixo é ilustrado o protótipo de baixa fidelidade:
 
 A aplicação foi pensada para todos aqueles que desejam ter sua mensagem e/ou senha mais segura.
 A interface permite ao usuário escrever seu texto, escolher a chave do deslocamento offset e selecionar se o texto deve ser cifrado ou decifrado, conforme imagem abaixo:
-<img src="https://github.com/EllenCavalcanteBrito/SAP008-cipher/blob/main/Prototipo%20fiel.jpg">
+<img src="https://github.com/EllenCavalcanteBrito/SAP008-cipher/blob/main/Prot%C3%B3tipo%20fiel.jpg">
 E com isso ajudar o usuário a ter mais segurança em suas mensagens e/ou senha.
 
 ## 2.2 Arquivos
